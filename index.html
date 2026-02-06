@@ -1736,7 +1736,7 @@
       applyTheme(savedTheme);
     } else {
       const prefersLight = window.matchMedia?.("(prefers-color-scheme: light)").matches;
-      applyTheme(prefersLight ? "light" : "dark");
+      applyTheme("dark");
     }
 
     themeToggleBtn.addEventListener("click", () => {
